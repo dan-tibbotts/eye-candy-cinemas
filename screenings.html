@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyeCandy Cinemas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Title Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Monoton&display=swap" rel="stylesheet">
+
+    <!-- Navigation Bar Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <span class="title">EyeCandy Cinemas<span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cinemas.html">Cinemas</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="screenings.html">Screenings</a></li>
+        </ul> 
+    </nav>
+
+    <div class="content">
+
+        <h1>Screenings</h1>
+        <p>Please select your Cinema Location</p>       
+        <div class="tab">
+            <button class="tab-links" id="AucklandButton" onclick="showScreenings(event, 'Auckland')">Auckland</button>
+            <button class="tab-links" onclick="showScreenings(event, 'Wellington')">Wellington</button>
+        </div>
+
+
+<!-- AUCKLAND CINEMA -->
+
+        <div id="Auckland" class="tab-content">
+            <h3 align="center">Showing Screenings for Flick 'n' Mix Cinema (Auckland)</h3>
+
+            <table class="sceenings-table">
+                <th>Date</th>
+                <th>Time</th>
+                <th>Movie</th>
+                <th>Running Time</th>
+                
+                <!-- 29/06/2020  -->
+                <tr>
+                    <td>29/06/2020</td>
+                    <td>10:00AM</td>
+                    <td>The Lord of the Rings: The Fellowship of the Ring</td>
+                    <td>178 mins</td>
+                </tr>
+                <tr>
+                    <td>29/06/2020</td>
+                    <td>1:45PM</td>
+                    <td>The Dark Knight</td>
+                    <td>152 mins</td>
+                </tr>    
+                <tr>
+                    <td>29/06/2020</td>
+                    <td>3:30PM</td>
+                    <td>The Matrix</td>
+                    <td>136 mins</td>
+                </tr>                    
+                <tr>
+                    <td>29/06/2020</td>
+                    <td>8:00PM</td>
+                    <td>Schindler's List</td>
+                    <td>195 mins</td>
+                </tr>        
+                <!-- 30/06/2020  -->
+                <tr>
+                    <td>30/06/2020</td>
+                    <td>11:15AM</td>
+                    <td>Forrest Gump</td>
+                    <td>142 mins</td>
+                </tr>
+                <tr>
+                    <td>30/06/2020</td>
+                    <td>2:00PM</td>
+                    <td>The Godfather</td>
+                    <td>175 mins</td>
+                </tr>
+                <tr>
+                    <td>30/06/2020</td>
+                    <td>5:00PM</td>
+                    <td>The Shawshank Redemption</td>
+                    <td>142 mins</td>
+                </tr>
+                <tr>
+                    <td>30/06/2020</td>
+                    <td>7:15PM</td>
+                    <td>Seven Samurai</td>
+                    <td>207 mins</td>
+                </tr>
+                <!-- 01/07/2020  -->
+                <tr>
+                    <td>01/07/2020</td>
+                    <td>10:00AM</td>
+                    <td>Se7en</td>
+                    <td>127 mins</td>
+                </tr>
+                <tr>
+                    <td>01/07/2020</td>
+                    <td>12:00PM</td>
+                    <td>Goodfellas</td>
+                    <td>146 mins</td>
+                </tr>
+                <tr>
+                    <td>01/07/2020</td>
+                    <td>2:45PM</td>
+                    <td>The Good, the Bad and the Ugly</td>
+                    <td>161 mins</td>
+                </tr>
+                <tr>
+                    <td>01/07/2020</td>
+                    <td>6:30PM</td>
+                    <td>The Lord of the Rings: The Return of the King</td>
+                    <td>201 mins</td>
+                </tr>
+                <!-- 02/07/2020 -->
+                <tr>
+                    <td>02/07/2020</td>
+                    <td>9:45AM</td>
+                    <td>Star Wars Episode V - The Empire Strikes Back</td>
+                    <td>124 mins</td>
+                </tr>
+                <tr>
+                    <td>02/07/2020</td>
+                    <td>11:30AM</td>
+                    <td>Fight Club</td>
+                    <td>139 mins</td>
+                </tr>
+                <tr>
+                    <td>02/07/2020</td>
+                    <td>2:00PM</td>
+                    <td>The Godfather: Part II</td>
+                    <td>202 mins</td>
+                </tr>
+                <tr>
+                    <td>02/07/2020</td>
+                    <td>4:30AM</td>
+                    <td>One Flew Over the Cuckoo's Nest</td>
+                    <td>133 mins</td>
+                </tr>
+                <!-- 03/07/2020 -->
+                <tr>
+                    <td>03/07/2020</td>
+                    <td>11:00AM</td>
+                    <td>Inception</td>
+                    <td>148 mins</td>
+                </tr>
+                <tr>
+                    <td>03/07/2020</td>
+                    <td>1:45PM</td>
+                    <td>Angry Men</td>
+                    <td>96 mins</td>
+                </tr>
+                <tr>
+                    <td>03/07/2020</td>
+                    <td>3:30PM</td>
+                    <td>Pulp Fiction</td>
+                    <td>154 mins</td>
+                </tr>
+                <tr>
+                    <td>03/07/2020</td>
+                    <td>6:00PM</td>
+                    <td>The Lord of the Rings: The Two Towers</td>
+                    <td>179 mins</td>
+                </tr>
+                
+            </table>            
+        </div>
+
+
+<!-- WELLINGTON CINEMA -->
+
+        <div id="Wellington" class="tab-content">
+            <h3 align="center">Showing Screenings for EyeSpy Cinema (Wellington)</h3>
+        
+            <table class="sceenings-table">
+                <th>Date</th>
+                <th>Time</th>
+                <th>Movie</th>
+                <th>Running Time</th>
+                <!-- 29/06/2020 -->
+                <tr>
+                    <td>29/06/2020</td>
+                    <td>11:00AM</td>
+                    <td>Inception</td>
+                    <td>148 mins</td>
+                </tr>
+                <tr>
+                    <td>29/06/2020</td>
+                    <td>1:45PM</td>
+                    <td>Angry Men</td>
+                    <td>96 mins</td>
+                </tr>
+                <tr>
+                    <td>29/06/2020</td>
+                    <td>3:30PM</td>
+                    <td>Pulp Fiction</td>
+                    <td>154 mins</td>
+                </tr>
+                <tr>
+                    <td>29/06/2020</td>
+                    <td>6:00PM</td>
+                    <td>The Lord of the Rings: The Two Towers</td>
+                    <td>179 mins</td>
+                </tr>
+                <!-- 30/06/2020 -->
+                <tr>
+                    <td>30/06/2020</td>
+                    <td>9:45AM</td>
+                    <td>Star Wars Episode V - The Empire Strikes Back</td>
+                    <td>124 mins</td>
+                </tr>
+                <tr>
+                    <td>30/06/2020</td>
+                    <td>11:30AM</td>
+                    <td>Fight Club</td>
+                    <td>139 mins</td>
+                </tr>
+                <tr>
+                    <td>30/06/2020</td>
+                    <td>2:00PM</td>
+                    <td>The Godfather: Part II</td>
+                    <td>202 mins</td>
+                </tr>
+                <tr>
+                    <td>30/06/2020</td>
+                    <td>4:30AM</td>
+                    <td>One Flew Over the Cuckoo's Nest</td>
+                    <td>133 mins</td>
+                </tr>
+                <!-- 01/07/2020  -->
+                <tr>
+                    <td>01/07/2020</td>
+                    <td>10:00AM</td>
+                    <td>The Lord of the Rings: The Return of the King</td>
+                    <td>201 mins</td>
+                </tr>
+                <tr>
+                    <td>01/07/2020</td>
+                    <td>12:00PM</td>
+                    <td>The Good, the Bad and the Ugly</td>
+                    <td>161 mins</td>
+                </tr>
+                <tr>
+                    <td>01/07/2020</td>
+                    <td>2:45PM</td>
+                    <td>Goodfellas</td>
+                    <td>146 mins</td>
+                </tr>
+                <tr>
+                    <td>01/07/2020</td>
+                    <td>6:30PM</td>
+                    <td>Se7en</td>
+                    <td>127 mins</td>                    
+                </tr>
+                <!-- 02/07/2020  -->
+                <tr>
+                    <td>02/07/2020</td>
+                    <td>11:15AM</td>
+                    <td>Forrest Gump</td>
+                    <td>142 mins</td>
+                </tr>
+                <tr>
+                    <td>02/07/2020</td>
+                    <td>2:00PM</td>
+                    <td>The Godfather</td>
+                    <td>175 mins</td>
+                </tr>
+                <tr>
+                    <td>02/07/2020</td>
+                    <td>5:00PM</td>
+                    <td>The Shawshank Redemption</td>
+                    <td>142 mins</td>
+                </tr>
+                <tr>
+                    <td>02/07/2020</td>
+                    <td>7:15PM</td>
+                    <td>Seven Samurai</td>
+                    <td>207 mins</td>
+                </tr>
+                <!-- 03/07/2020  -->
+                <tr>
+                    <td>03/07/2020</td>
+                    <td>10:00AM</td>
+                    <td>The Lord of the Rings: The Fellowship of the Ring</td>
+                    <td>178 mins</td>
+                </tr>
+                <tr>
+                    <td>03/07/2020</td>
+                    <td>1:45PM</td>
+                    <td>The Dark Knight</td>
+                    <td>152 mins</td>
+                </tr>    
+                <tr>
+                    <td>03/07/2020</td>
+                    <td>3:30PM</td>
+                    <td>The Matrix</td>
+                    <td>136 mins</td>
+                </tr>                    
+                <tr>
+                    <td>03/07/2020</td>
+                    <td>8:00PM</td>
+                    <td>Schindler's List</td>
+                    <td>195 mins</td>
+                </tr>   
+            </table>    
+        </div>
+
+        <script>
+
+            /*
+                Script for the tab feature
+            */
+            function showScreenings(evt, cityName) {
+                
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tab-content");
+                
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                tablinks = document.getElementsByClassName("tab-links");
+
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+        </script>
+
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="http://www.imdb.com" target="_blank">IMDB Website</a></li>
+        </ul>
+    </footer>
+
+
+</body>
+</html>

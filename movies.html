@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyeCandy Cinemas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Title Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Monoton&display=swap" rel="stylesheet">
+
+    <!-- Navigation Bar Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <span class="title">EyeCandy Cinemas<span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cinemas.html">Cinemas</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="screenings.html">Screenings</a></li>
+        </ul> 
+    </nav>
+
+    <div class="content">
+        <div class="movies-list">
+            <div class="movies-column">
+                <img src="assets/movies/the_matrix.jpg" onclick="show('prev-matrix')" />
+                <img src="assets/movies/LOTR_return_of_the_king.jpg" onclick="show('prev-LOTR-return')"/>
+                <img src="assets/movies/schindlers_list.jpg" onclick="show('prev-sl')" />
+                <img src="assets/movies/the_dark_knight.jpg" onclick="show('prev-tdk')"/>
+                <img src="assets/movies/se7en.jpg" onclick="show('prev-s7')"/>   
+            </div>
+    
+            <div class="movies-column">
+                <img src="assets/movies/one_flew_over_the_cuckoos_nest.jpg" onclick="show('prev-ofotcn')">
+                <img src="assets/movies/fight_club.jpg" onclick="show('prev-fc')"/>
+                <img src="assets/movies/forrest_gump.jpg" onclick="show('prev-fg')"/>
+                <img src="assets/movies/goodfellas.jpg" onclick="show('prev-gf')"/>
+                <img src="assets/movies/LOTR_fellowship.jpg" onclick="show('prev-TLOTR-fellowship')"/></a>
+            </div>
+    
+            <div class="movies-column">
+                <img src="assets/movies/the_shawshank_redemption.jpg" onclick="show('prev-tsr')"/>   
+                <img src="assets/movies/pulp_fiction.jpg" onclick="show('prev-pf')"/>
+                <img src="assets/movies/seven_samurai.jpg" onclick="show('prev-ss')"/>
+                <img src="assets/movies/star_wars_episode_v.jpg" onclick="show('prev-sw')"/>
+                <img src="assets/movies/the_good_the_bad_and_the_ugly.jpg" onclick="show('prev-tgtbatu')"/>
+            </div>
+    
+            <div class="movies-column">
+                <img src="assets/movies/the_godfather.jpg" onclick="show('prev-tg')"/>
+                <img src="assets/movies/LOTR_two_towers.jpg" onclick="show('prev-LOTR-towers')"/>
+                <img src="assets/movies/12_angry_men.jpg" onclick="show('prev-12am')"/>
+                <img src="assets/movies/inception.jpg" onclick="show('prev-in')"/>
+                <img src="assets/movies/the_godfather_II.jpg" onclick="show('prev-tgII')"/>      
+            </div>
+        </div>
+    </div>  
+    
+    <footer>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="http://www.imdb.com" target="_blank">IMDB Website</a></li>
+        </ul>
+    </footer>
+
+<!-- Movie Previews--> -->
+
+    <!-- The Matrix -->
+    <div class="movies-play" id="prev-matrix">
+        <h1>The Matrix</h1>
+        <p>
+            A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0133093" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vKQi3bBA1y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-matrix')">Close Preview</button>
+    </div>
+
+    <!-- One Flew over the Cuckoo's Nest -->
+    <div class="movies-play" id="prev-ofotcn">
+        <h1>One Flew Over the Cuckoo's Nest</h1>
+        <p>
+            A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse and rallies up the scared patients.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0073486" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OXrcDonY-B8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-ofotcn')">Close Preview</button>
+    </div>
+
+    <!-- The Shawshank Redemption -->
+    <div class="movies-play" id="prev-tsr">
+        <h1>The Shawshank Redemption</h1>
+        <p>
+            Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0111161" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NmzuHjWmXOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-tsr')">Close Preview</button>
+    </div>
+
+    <!-- The Godfather -->
+    <div class="movies-play" id="prev-tg">
+        <h1>The Godfather</h1>
+        <p>
+            The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0068646" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5DO-nDW43Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-tg')">Close Preview</button>
+    </div>
+
+    <!-- TLOTR: The Return of the King -->
+    <div class="movies-play" id="prev-LOTR-return">
+        <h1>The Lord of the Rings: The Return of the King</h1>
+        <p>
+            Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0167260" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/y2rYRu8UW8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-LOTR-return')">Close Preview</button>
+    </div>
+
+    <!-- Fight Club -->
+    <div class="movies-play" id="prev-fc">
+        <h1>Fight Club</h1>
+        <p>
+            An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0137523" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qtRKdVHc-cE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-fc')">Close Preview</button>
+    </div>
+
+    <!-- Pulp Fiction -->
+    <div class="movies-play" id="prev-pf">
+        <h1>Pulp Fiction</h1>
+        <p>
+            The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0110912" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/s7EdQ4FqbhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-pf')">Close Preview</button>
+    </div>
+
+    <!-- Lord of the Rings: The Two Towers -->
+    <div class="movies-play" id="prev-LOTR-towers">
+        <h1>Lord of the Rings: The Two Towers</h1>
+        <p>
+            While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0167261" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LbfMDwc4azU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-LOTR-towers')">Close Preview</button>
+    </div>
+
+    <!-- Schindlers List -->
+    <div class="movies-play" id="prev-sl">
+        <h1>Schindler's List</h1>
+        <p>
+            In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0108052" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gG22XNhtnoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-sl')">Close Preview</button>
+    </div>
+
+    <!-- Forrest Gump -->
+    <div class="movies-play" id="prev-fg">
+        <h1>Forrest Gump</h1>
+        <p>
+            The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0109830" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bLvqoHBptjg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-fg')">Close Preview</button>
+    </div>
+
+    <!-- Seven Samurai -->
+    <div class="movies-play" id="prev-ss">
+        <h1>Seven Samurai</h1>
+        <p>
+            A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0047478" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wJ1TOratCTo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-ss')">Close Preview</button>
+    </div>
+
+    <!-- 12 Angry Men -->
+    <div class="movies-play" id="prev-12am">
+        <h1>12 Angry Men</h1>
+        <p>
+            A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0050083" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_13J_9B5jEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-12am')">Close Preview</button>
+    </div>
+
+
+    <!-- The Dark Knight -->
+    <div class="movies-play" id="prev-tdk">
+        <h1>The Dark Knight</h1>
+        <p>
+            When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0468569" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EXeTwQWrcwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-tdk')">Close Preview</button>
+    </div>
+
+    <!-- Goodfellas -->
+    <div class="movies-play" id="prev-gf">
+        <h1>Goodfellas</h1>
+        <p>
+            The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0099685" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2ilzidi_J8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-gf')">Close Preview</button>
+    </div>
+
+    <!-- Star Wars: Episode V - The Empire Strikes Back -->
+    <div class="movies-play" id="prev-sw">
+        <h1>Star Wars: Episode V - The Empire Strikes Back</h1>
+        <p>
+            After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader and a bounty hunter named Boba Fett all over the galaxy.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0080684" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JNwNXF9Y6kY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-sw')">Close Preview</button>
+    </div>    
+
+    <!-- Inception -->
+    <div class="movies-play" id="prev-in">
+        <h1>Inception</h1>
+        <p>
+            A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt1375666" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YoHD9XEInc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-in')">Close Preview</button>
+    </div>  
+
+    <!-- Se7en -->
+    <div class="movies-play" id="prev-s7">
+        <h1>Se7en</h1>
+        <p>
+            Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0114369" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/znmZoVkCjpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-s7')">Close Preview</button>
+    </div>  
+
+    <!-- The Lord of the Rings: The Fellowship of the Ring -->
+    <div class="movies-play" id="prev-TLOTR-fellowship">
+        <h1>The Lord of the Rings: The Fellowship of the Ring</h1>
+        <p>
+            A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0120737" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aStYWD25fAQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-TLOTR-fellowship')">Close Preview</button>
+    </div>  
+
+    <!-- The Good, the Bad and the Ugly -->
+    <div class="movies-play" id="prev-tgtbatu">
+        <h1>The Good, the Bad and the Ugly</h1>
+        <p>
+            A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0060196" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WCN5JJY_wiA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-tgtbatu')">Close Preview</button>
+    </div>  
+
+    <!-- The Godfather: Part II -->
+    <div class="movies-play" id="prev-tgII">
+        <h1>The Godfather: Part II</h1>
+        <p>
+            The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.
+        </p>
+        <p>
+            <a href="https://www.imdb.com/title/tt0071562" target="_blank">View Movie Details on IMDb</a>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9O1Iy9od7-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="submit" class="button" onclick="hide('prev-tgII')">Close Preview</button>
+    </div>  
+
+<!-- Script to Show Video Previews and to stop playing video when user clicks close -->
+    <script>
+        function show(movie){
+            // Show Movie Element
+            document.getElementById(movie).style.display = "block";
+        }
+
+        function hide(movie){
+            // Hide Movie Element
+            var movieElement = document.getElementById(movie) 
+            document.getElementById(movie).style.display = "none";
+
+            // Stop Playing Video
+            document.querySelectorAll('iframe').forEach(v => { v.src = v.src });
+        }
+        
+    </script>
+
+
+
+
+</body>
+</html> 

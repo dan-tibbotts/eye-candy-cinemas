@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyeCandy Cinemas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Title Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Monoton&display=swap" rel="stylesheet">
+
+    <!-- Navigation Bar Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <span class="title">EyeCandy Cinemas<span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cinemas.html">Cinemas</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="screenings.html">Screenings</a></li>
+        </ul> 
+    </nav>
+
+    <div class="content">
+
+        <form action="success.html" class="contact-form">
+            
+            <h3>Send us a message</h3>
+            <p>
+                Please complete the form below to get in contact with us. <br/>
+                * denotes a required field
+            </p>
+            <div>
+                <label for="firstname" class="label">First Name*</label>
+                <input id="firstname" type="text" class="input" placeholder="Required" required/>
+            </div>
+
+            <div>
+                <label for="lastname" class="label">Last Name</label>
+                <input id="lastname" type="text" class="input" />
+            </div>
+
+            <div>
+                <label for="phone" class="label">Phone</label>
+                <input id="phone" type="tel" class="input" />
+            </div>
+
+            <div>
+                <label for="email" class="label">Email*</label>
+                <input id="email" type="email" class="input" placeholder="Required" required/>
+            </div>
+
+            <div>
+                <label for="message" class="label">Message*</label>
+                <textarea id="message" class="input" rows="5" placeholder="Message Required" required></textarea>
+            </div>
+
+            <div>
+                <input type="submit" id="submit" value="Send Message" class="button" />
+                <input type="reset" id="reset" value="Clear Form" class="button" />
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="http://www.imdb.com" target="_blank">IMDB Website</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
